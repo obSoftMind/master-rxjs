@@ -28,7 +28,6 @@ export class TypeAheadComponent implements AfterViewInit {
   @ViewChild('searchInput') input: ElementRef;
   @ViewChild('output') output: ElementRef;
 
-
   ngAfterViewInit(): void {
     fromEvent(this.input.nativeElement, 'keyup')
       .pipe(
