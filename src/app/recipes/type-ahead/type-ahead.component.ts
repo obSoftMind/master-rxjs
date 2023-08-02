@@ -11,7 +11,8 @@ const getContinents = (keys: string) =>
     'north america',
     'south america'
   ].filter(e => e.indexOf(keys.toLowerCase()) > -1);
-
+// e c'est chqaue e lment du tableau 
+// est ce que la chaine saisie (keys) se traouve dans e si ou retourener [e,...]
 const fakeContinentsRequest = (keys: string) =>
   of(getContinents(keys)).pipe(
     tap(_ => console.log(`API CALL at ${new Date()}`))
